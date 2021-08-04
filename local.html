@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="menu-topo">
+            <p>Controle de Locais de Trabalho</p>
+        </div>
+    </header>
+    <div class="menu">
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Administração</li>
+                </a>
+                <a href="#">
+                    <li>Administradores</li>
+                </a>
+                <a href="#">
+                    <li>Áreas</li>
+                </a>
+                <a href="#">
+                    <li>Locais de Trabalho</li>
+                </a>
+                <a href="#">
+                    <li>Habilidades</li>
+                </a>
+                <a href="#">
+                    <li>Log</li>
+                </a>
+                <a href="#">
+                    <li>Responsaveis</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <section class="conteudo">
+        <p>Locais de Trabalho</p>
+        <div class="add-local">
+            <div class="add-predio">
+                <label for="">Predio</label>
+                <input type="text" id="predio">
+            </div>            
+            <div class="add-area">
+                <label for="">Local</label>
+                <input type="text" id="local">
+            </div>
+            <button id="btn1" class="btn" onclick="local.salvar()">+</button>
+        </div>
+        
+        <div class="resultado">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>Prédio</td>
+                        <td>Local De Trabalho</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

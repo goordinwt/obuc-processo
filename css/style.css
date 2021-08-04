@@ -1,0 +1,164 @@
+* {
+    top: 0;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold italic;
+}
+body { 
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to top, rgb(15, 125, 199), #0d305ef5 );
+}
+.cabecalho{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-image:linear-gradient(to right, #0d305e 25%, rgba(255, 255, 255, 0)), url('../img/admin-small.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border-bottom: 1px solid rgb(245, 244, 244);
+    justify-content: space-between;
+}
+.cabecalho p{
+    margin: 20px 20px auto 20px;
+    font-size: 22px;
+    font-weight: italic;
+}
+.cabecalho ul {
+    margin: 20px 40px 0 0;
+}
+.cabecalho ul li{
+    padding: 5px;
+    display: inline-block;
+}
+
+.cabecalho ul li:first-child{
+    border-right: 1px solid white;
+}
+/* MENU */
+.menu {
+    width: 250px;
+}
+.menu ul a{
+    text-decoration: none;
+}
+
+.menu ul a li{
+    background: #0d305ef5;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.menu ul li:hover{
+    background-color: rgb(0, 33, 94);
+}
+
+/* CONTEUDO */
+
+.conteudo{
+    flex: 1;
+    height: 87.5vh;
+    background: rgb(245, 244, 244);
+
+}
+.conteudo p{
+    color: #0d305ef5;
+    font-size: 20px;
+    margin: 20px 0 0 40px;
+    
+}
+.conteudo p::after{
+    content: "";
+    display: block;
+    width: 96%;
+    height: 1px;
+    background: #0d305ef5;
+    margin: auto 0 0 0px;
+}
+.add-local{
+    display: flex;
+    margin: 10px 0 10px 40px;
+    background-color: rgb(255, 255, 255);
+}
+.add-local label{
+    color: #0d305ef5;
+    font-weight: bolder;
+}
+.add-local input{
+    border: 1px solid rgb(192, 185, 185);
+    border-radius: 3px;
+    padding: 5px;
+    outline: 0;
+    color: rgb(0, 33, 94);
+}
+.btn{
+    width: 20px;
+    height: 25px;
+    margin: 20px 5px 0 0;
+    color: rgb(0, 33, 94);
+    font-size: 16px;
+    font-weight: bolder;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(15, 125, 199);
+}
+
+.add-area{
+    margin: 0 10px 0 10px;
+    display: grid;
+    width: 200px;
+    height: 25px;
+}
+.add-predio{
+    display: grid;
+    width: 200px;
+    height: 25px;
+}
+.resultado{
+    display: flex;
+    margin: 0 0 0 40px;
+}
+.resultado table thead tr td{
+    color: white;
+    font-weight: bolder;
+    margin: 0 20px;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+}
+.resultado table thead{
+    background-color: #0d305e;
+}
+.resultado table tr button{
+    color: rgb(0, 33, 94);
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.resultado table tbody tr td{
+    color: black;
+    text-align: center;
+}
+
+.resultado table tbody tr td:last-child{
+    display: flex;
+    border: none;
+}
+.resultado table tr td:last-child{
+    width: 50px;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid rgb(198, 198, 207);
+}
